@@ -5,7 +5,7 @@ import Shell from "@/components/Shell";
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font" });
 
-export const metadata = { title: "Mercato: send money within Nuvion", description: "A demo marketplace that runs every Nuvion book-transfer scenario in the sandbox." };
+export const metadata = { metadataBase: new URL(process.env.PUBLIC_APP_URL?.trim() || "http://localhost:3000"), title: "Mercato: send money within Nuvion", description: "A demo marketplace that runs every Nuvion book-transfer scenario in the sandbox." };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
