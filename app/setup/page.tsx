@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Config, PartyId, PARTY_META, SCENARIOS } from "@/lib/scenarios";
+import { Config, EMPTY_CONFIG, PartyId, PARTY_META, SCENARIOS } from "@/lib/scenarios";
 import { useStore } from "@/components/Store";
 import { Avatar } from "@/components/ui";
 
@@ -60,6 +60,7 @@ export default function Setup() {
 
         <div className="actions">
           <button className="btn primary">Save setup</button>
+          <button type="button" className="btn light" onClick={() => { saveCfg(EMPTY_CONFIG); setSaved(false); }}>Clear my keys</button>
           {saved && <span role="status" className="ok">Saved. Saved recipients were cleared.</span>}
         </div>
       </form>
