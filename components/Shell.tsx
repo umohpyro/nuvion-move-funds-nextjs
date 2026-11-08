@@ -29,7 +29,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           <nav><Link href="/setup" className="chip"><Icon name="gear" size={15} />Setup</Link><ThemeSwitcher /></nav>
         </header>
         {children}
-        <footer className="foot">Sandbox only. Mercato is a demo marketplace built on the Nuvion API. Your keys stay in this browser tab and go to the server only to call Nuvion.</footer>
+        <footer className="foot">Independent demo. Sandbox only, no real payments. Not financial advice. Mercato is a demo marketplace built on the Nuvion API. Your keys stay in this browser tab and go to the server only to call Nuvion. <Link href="/privacy">Privacy</Link></footer>
       </div>
     </div>
   );
