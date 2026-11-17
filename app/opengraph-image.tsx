@@ -16,7 +16,7 @@ export default function OpengraphImage() {
           <div style={{ fontSize: 96, fontWeight: 800, letterSpacing: -2, display: "flex" }}>Mercato</div>
           <div style={{ fontSize: 42, color: "#F6DCD5", display: "flex" }}>Seven ways to move money between Nuvion accounts</div>
         </div>
-        <div style={{ fontSize: 26, color: "#F6DCD5", opacity: 0.8, display: "flex" }}>Sandbox only. No real money moves. Bring your own key.</div>
+        <div style={{ fontSize: 26, color: "#F6DCD5", opacity: 0.8, display: "flex" }}>Sandbox only. No real money moves. BYOK.</div>
       </div>
     ),
     size,
